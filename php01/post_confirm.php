@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 
 function h($value){
     return htmlspecialchars($value, ENT_QOUTES);
@@ -17,6 +18,11 @@ fwrite($file, $name.",".$mail."\r\n");
 fclose($file);
 
 
+=======
+$flg = 0;
+$name = $_POST["name"];
+$mail = $_POST["mail"];
+>>>>>>> master
 if($name==""){
 $name = "未入力です";
 $flg = 1;
@@ -34,8 +40,13 @@ if($mail==""){
 <title>POST（受信）</title>
 </head>
 <body>
+<<<<<<< HEAD
 お名前：<?php echo h($name); ?>
 EMAIL：<?php echo h($mail); ?>
+=======
+お名前：<?php echo $name; ?>
+EMAIL：<?php echo $mail; ?>
+>>>>>>> master
 <?php 
 if($flg == 0){ 
     ?>
